@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 116%;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+body{
+  background: salmon;
+  width: 100%;
+  height: 100vh;
+}
+.clock {
+  width: 70vmin;
+  height: 70vmin;
+  background: #ecc527;
+  border-radius: 50%;
+  position: relative;
+  border: 35px solid #79661b;
+  box-shadow: 0 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span{
+    position: absolute;
+}
+.numbers {
+  position: absolute;
+  height: 100%;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.number {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 4%;
+}
+.number1 {transform: rotate(30deg);}
+.number2 {transform: rotate(60deg);}
+.number3 {transform: rotate(90deg);}
+.number4 {transform: rotate(120deg);}
+.number5 {transform: rotate(150deg);}
+.number6 {transform: rotate(180deg);}
+.number7 {transform: rotate(210deg);}
+.number8 {transform: rotate(240deg);}
+.number9 {transform: rotate(270deg);}
+.number10 {transform: rotate(300deg);}
+.number11 {transform: rotate(330deg);}
+
+.number1  span{transform: rotate(-30deg);}
+.number2  span{transform: rotate(-60deg);}
+.number3  span{transform: rotate(-90deg);}
+.number4  span{transform: rotate(-120deg);}
+.number5  span{transform: rotate(-150deg);}
+.number6  span{transform: rotate(-180deg);}
+.number7  span{transform: rotate(-210deg);}
+.number8  span{transform: rotate(-240deg);}
+.number9  span{transform: rotate(-270deg);}
+.number10 span {transform: rotate(-300deg);}
+.number11 span {transform: rotate(-330deg);}
+
+
+
+
+.clock::before{
+  position: absolute;
+  content: '';
+  z-index: 52;
+  height: 10px;
+  width: 10px;
+  background: black;
+  border-radius: 50px;
+  border : 5px solid #79661b;
+}
+
+
+
+.minutes{
+  width: 6px;
+  height: 33%;
+  background: black;
+  top: 17%;
+  border-radius: 5px 5px 0 0;
+  z-index: 49;
+  transform-origin: bottom;
+}
+.hours{
+  width: 6px;
+  height: 27%;
+  background: red;
+  top: 23%;
+  border-radius: 5px 5px 0 0;
+  transform-origin: bottom;
+  /* transform: rotate(30deg); */
+  z-index: 50;
+}
+
+
+
+.seconds{
+  width: 2px;
+  height:34%;
+  background: white;
+  top: 16%;
+  border-radius: 5px 5px 0 0;
+  transform-origin: bottom;
+  /* transform: rotate(50deg); */
+  z-index: 51;
+  }
+
+
+
